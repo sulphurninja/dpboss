@@ -1,0 +1,277 @@
+.panel-chart-container {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.back-link {
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.chart-result {
+  background: #fff;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.chart-result div {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.chart-result span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc3545;
+}
+
+.chart-result a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.chart-result a:hover {
+  text-decoration: underline;
+}
+
+.result-chart {
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.result-chart h1 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.table-container {
+  overflow-x: auto;
+  padding: 20px;
+}
+
+.panel-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 12px;
+  background: white;
+}
+
+.panel-table th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 6px;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.panel-table td {
+  border: 1px solid #ddd;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 4px;
+  min-width: 40px;
+  height: 60px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.date-cell {
+  background-color: #f8f9fa;
+  font-weight: bold;
+  color: #333;
+  text-align: center !important;
+  min-width: 120px;
+  padding: 10px !important;
+  font-size: 11px;
+}
+
+.winning-cell {
+  background-color: #ffebee !important;
+  color: #d32f2f !important;
+  font-weight: bold;
+}
+
+.empty-cell {
+  background-color: #f5f5f5;
+}
+
+.no-data {
+  color: #999;
+  font-style: italic;
+}
+
+.no-data-row {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  padding: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .panel-table {
+    font-size: 10px;
+  }
+
+  .panel-table td {
+    padding: 6px 2px;
+    min-width: 35px;
+    height: 50px;
+  }
+
+  .date-cell {
+    min-width: 100px;
+    font-size: 10px;
+  }
+
+  .result-chart {
+    margin: 10px;
+  }
+
+  .result-chart h1 {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+}
+
+.footer-text-div {
+  background: white;
+  margin: 20px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.faq-heading {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #333;
+  margin: 20px 0 15px 0;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.faq-title {
+  font-weight: bold;
+  color: #007bff;
+  margin: 15px 0 8px 0;
+}
+
+.faq-ans {
+  color: #555;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.button2 {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 20px 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.button2:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 40px;
+}
+
+.ftr-icon {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.ftr-icon:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+footer p {
+  margin: 0;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+footer span {
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading animation for better UX */
+.panel-table tbody tr {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
