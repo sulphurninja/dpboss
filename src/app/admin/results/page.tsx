@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import AdminLayout from '../components/AdminLayout';
 
@@ -22,7 +22,7 @@ interface LiveResult {
   createdAt?: string;
 }
 
-export default function AdminResultsPage() {
+ function AdminResultsPageContent() {
   const searchParams = useSearchParams();
   const [markets, setMarkets] = useState<Market[]>([]);
   const [results, setResults] = useState<LiveResult[]>([]);
@@ -497,5 +497,21 @@ return matchesSearch && matchesMarket;
         </div>
       )}
     </AdminLayout>
+  );
+}
+
+export default function AdminResultsPage() {
+  return (
+    <Suspense fallback={
+      <AdminLayout title="Results Management">
+        <div className="flex items-center justify-center min-h-96">
+          <div className="relative">
+            <div className="w-16 h-16 border-4 border-blue-200 border-t-blue-600 rounded-full animate-spin"></div>
+          </div>
+        </div>
+      </AdminLayout>
+    }>
+      <AdminResultsPageContent />
+    </Suspense>
   );
 }
